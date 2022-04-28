@@ -9,12 +9,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const prompt_service_1 = require("./core/prompt/prompt.service");
+const ffmpeg_executor_1 = require("./commands/ffmpeg/ffmpeg.executor");
+const console_logger_1 = require("./out/console-logger/console-logger");
 class App {
     run() {
         return __awaiter(this, void 0, void 0, function* () {
-            const result = yield new prompt_service_1.PromptService().input('Число', 'number');
-            console.log(result);
+            new ffmpeg_executor_1.FFmpegExecutor(new console_logger_1.ConsoleLogger()).execute();
         });
     }
 }

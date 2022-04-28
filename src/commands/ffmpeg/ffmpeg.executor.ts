@@ -1,6 +1,5 @@
 import { ChildProcessWithoutNullStreams, spawn } from 'child_process';
 import { CommandExecutor } from '../../core/executor/command.executor';
-import { CommandExec } from '../../core/executor/command.types';
 import { FileService } from '../../core/files/files.service';
 import { StreamLogger } from '../../core/handlers/stream-logger.interface';
 import { StreamHandler } from '../../core/handlers/stream.handler';
